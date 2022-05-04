@@ -22,12 +22,12 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(const Duration(milliseconds: 1000), (){
       LocalCaches.getLocal().then((value) {
         if (value == true) {
-          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(
+          return Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(
             builder: (_) => const AllProductsPage('All Products')), 
             (route) => false
           );
         } else {
-          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(
+          return Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(
             builder: (_) => const IntroPage()), 
             (route) => false
           );
@@ -38,8 +38,8 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
+    return Scaffold(
+      body: Center(
         child: Image.asset('logo.png', width: 200),
       ),
     );

@@ -126,35 +126,37 @@ void onDonePress() {
 
   @override
   Widget build(BuildContext context) {
-    return IntroSlider(
-      // List slides
-      slides: slides,
+    return Scaffold(
+      body: IntroSlider(
+        // List slides
+        slides: slides,
 
-      // Skip button
-      // renderSkipBtn: renderSkipBtn(),
-      // skipButtonStyle: myButtonStyle(),
+        // Skip button
+        // renderSkipBtn: renderSkipBtn(),
+        // skipButtonStyle: myButtonStyle(),
 
-      // Next button
-      renderNextBtn: renderNextBtn(),
-      onNextPress: onNextPress,
-      nextButtonStyle: myButtonStyle(),
+        // Next button
+        renderNextBtn: renderNextBtn(),
+        onNextPress: onNextPress,
+        nextButtonStyle: myButtonStyle(),
 
-      // Done button
-      renderDoneBtn: renderDoneBtn(),
-      onDonePress: onDonePress,
-      // doneButtonStyle: myButtonStyle(),
+        // Done button
+        renderDoneBtn: renderDoneBtn(),
+        onDonePress: onDonePress,
+        // doneButtonStyle: myButtonStyle(),
 
-      // Dot indicator
-      colorDot: const Color(0x33FFA8B0),
-      colorActiveDot: const Color(0xffFFA8B0),
-      sizeDot: 13.0,
+        // Dot indicator
+        colorDot: const Color(0x33FFA8B0),
+        colorActiveDot: const Color(0xffFFA8B0),
+        sizeDot: 13.0,
 
-      // Show or hide status bar
-      hideStatusBar: true,
-      backgroundColorAllSlides: Colors.grey,
+        // Show or hide status bar
+        hideStatusBar: true,
+        backgroundColorAllSlides: Colors.grey,
 
-      // Scrollbar
-      verticalScrollbarBehavior: scrollbarBehavior.SHOW,
+        // Scrollbar
+        verticalScrollbarBehavior: scrollbarBehavior.SHOW,
+      ),
     );
   }
   

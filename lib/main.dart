@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:glovory_test/presentation/all_products_page.dart';
 import 'package:glovory_test/presentation/splash_page.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const SplashPage(),
+      // home: AllProductsPage('All Products'),
       debugShowCheckedModeBanner: false,
     );
   }
