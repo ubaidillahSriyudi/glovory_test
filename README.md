@@ -1,6 +1,6 @@
 # glovory_test
 
-A new Flutter project.
+API Data provided from https://dummy-ecom-api.herokuapp.com
 
 ## Getting Started
 
